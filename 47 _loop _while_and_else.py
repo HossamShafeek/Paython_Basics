@@ -13,8 +13,9 @@ while a < 15:
 
   a += 1  # a = a + 1
 
-print("Loop is Done")  # True Become False
+else:
+ print("Loop is Done")  # True Become False
 
-while False:
+ while False:
 
   print("Will Not Print")
