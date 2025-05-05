@@ -1,3 +1,20 @@
+# -----------------
+# -- Loop => For --
+# -- Nested Loop --
+# -----------------
+
+peoples = ["Osama", "Ahmed", "Sayed", "Ali"]
+
+skills = ['Html', 'Css', 'Js']
+
+for name in peoples:  # Outer Loop
+
+  print(f"{name} Skills Is: ")
+
+  for skill in skills:  # Inner Loop
+
+    print(f"- {skill}")
+
 # Dictionary
 
 peoples = {
@@ -18,9 +35,18 @@ peoples = {
   }
 }
 
+print(peoples["Osama"])
+print(peoples["Ahmed"])
+print(peoples["Sayed"])
+
+print(peoples["Osama"]['Css'])
+print(peoples["Ahmed"]['Css'])
+print(peoples["Sayed"]['Css'])
 
 for name in peoples:
-    print(f'Name: {name}')
-    #print(f'Skills and progress for {name} is: {peoples[name]}')
-    for skill in peoples[name]:
-        print(f'Skill is {peoples[name][skill]}')
+
+  print(f"Skills and Progress For {name} Is: ")
+
+  for skill in peoples[name]:
+
+    print(f"{skill.upper()} => {peoples[name][skill]}")
