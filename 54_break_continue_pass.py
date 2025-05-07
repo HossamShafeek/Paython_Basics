@@ -33,7 +33,7 @@ print("#" * 50)
 for number in myNumbers:
 
   if number == 13:
-
+    # pass => Do Nothing
     pass
 
   print(number)
